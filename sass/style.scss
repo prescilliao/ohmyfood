@@ -1,0 +1,17 @@
+
+@import "variables";
+
+@import "commun";
+
+.title{
+    display: flex;
+    justify-content: center;
+    padding:14px 89px 13px 89px;;
+    &.location{
+        flex-direction: row;
+        background-color: $backg-color;
+            &.fa-solid{
+              color: white;
+            }
+    }
+}
