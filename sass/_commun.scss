@@ -1,5 +1,36 @@
+*{
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
+}
+
 body {
     margin:0 ;
     padding:0;
     font-family: $main-font;
+    max-width: 768px;
+}
+
+.fa-solid {
+    color: black;
+}
+
+.fa-thin{
+    color: black;
+}
+
+.content{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+footer{
+    background-color:#353535;
+    padding: 22px 25px;
+    @include display-column;
+    gap: 16px;
 }

@@ -1,6 +1,69 @@
+// color
 $main-color: #9356DC ;
 $bar-color: #99E2D0;
 $button-color: #FF79DA;
-$main-font: Roboto;
 $backg-color: #EAEAEA;
 $backg-color-two: #f6f6f6;
+
+// font
+$main-font: 'Roboto';
+$second-font: 'Shrikhand';
+
+// weight
+$weight-3: font-weight 300;
+$weight-4: font-weight 400;
+$weight-5: font-weight 500;
+$weight-9: font-weight 900;
+$weight-7: font-weight 700;
+
+// title
+@mixin top-title{
+    font-family: $second-font;
+    font-size: 30px;
+    font-weight: $weight-4;
+}
+
+@mixin subtitle-home{
+    font-family: $main-font; 
+    font-size: 24px; 
+    font-weight: $weight-7;
+}
+
+@mixin subtitle-restaurants{
+    font-family: $second-font; 
+    font-size: 28px;
+    font-weight: $weight-4;
+}
+
+// flex
+
+@mixin display-column{
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin display-row{
+    display: flex;
+    flex-direction: row;
+}
+// footer
+@mixin title-footer{
+    font-family: $second-font; 
+    font-size: 18px;
+    font-weight: $weight-4;
+}
+
+@mixin subtilte-footer{
+    font-family: $main-font; 
+    font-size: 16px;
+    font-weight: $weight-9;
+}
+
+@mixin conctact-footer{
+    font-family: $main-font; 
+    font-size: 16px;
+    font-weight: $weight-4;
+}
+
+
+
