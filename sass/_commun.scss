@@ -28,6 +28,10 @@ a{
     color: black;
 }
 
+.title{
+    @include top-title ;
+}
+
 footer{
     background-color:#353535;
     padding: 22px 25px;

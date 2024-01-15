@@ -6,8 +6,8 @@ $backg-color: #EAEAEA;
 $backg-color-two: #f6f6f6;
 
 // font
-$main-font: 'Roboto';
-$second-font: 'Shrikhand';
+$main-font:'Roboto';
+$second-font:'Shrikhand';
 
 // weight
 $weight-3: font-weight 300;
@@ -45,6 +45,12 @@ $weight-7: font-weight 700;
 @mixin display-row{
     display: flex;
     flex-direction: row;
+}
+
+@mixin justify-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 // footer
 @mixin title-footer{
