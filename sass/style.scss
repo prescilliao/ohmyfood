@@ -12,3 +12,60 @@
 @include subtilte-footer;
 @include conctact-footer;
 
+// ...
+
+// style page home :
+
+.top_page{
+    @include display-row;
+    @include justify-center;
+    background-color: $backg-color;
+    width: 100%;
+}
+
+.welcome{
+    background-color: $backg-color-two;
+    .welcontent{
+        @include display-column;
+        @include justify-center;
+    }
+}
+
+.tuto{
+    @include display-column;
+    .tuto_card{
+        background-color: $backg-color-two;
+        @include display-row;
+        justify-content: space-around;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        .number{
+            background-color: $main-color;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+        }
+    }
+}
+
+.restauration{
+    background-color: $backg-color-two;
+    .restau{
+        @include display-column;
+        .home_card{
+            border-radius: 15px;
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+            @include display-column;
+            .home_img{
+                object-fit: cover;
+                .text{
+                    @include display-row;
+                    justify-content: space-between;
+                    padding: 5px;
+                    .txt{
+                        @include displey-column;
+                    }
+                }
+            }
+        }
+    }
+}

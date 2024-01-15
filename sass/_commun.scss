@@ -15,7 +15,7 @@ body {
     color: black;
 }
 
-.fa-thin{
+.fa-heart{
     color: black;
 }
 
@@ -29,7 +29,20 @@ a{
 }
 
 .title{
+    font-family: $second-font; 
     @include top-title ;
+    @include justify-center;
+}
+
+.titletwo{
+    @include subtitle-home;
+}
+
+.button{
+    border-radius: 25px;
+    background: linear-gradient(193deg, $main-color, $button-color);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+    @include justify-center;
 }
 
 footer{
@@ -37,4 +50,22 @@ footer{
     padding: 22px 25px;
     @include display-column;
     gap: 16px;
+    .foot_title{
+        @include title-footer;
+    }
+
+    ul{
+        @include display-column;
+
+        li{ 
+            @include display-row;
+            .foot{
+                @include subtilte-footer;
+            }
+            .contact{
+                @include conctact-footer
+            }
+        } 
+
+    }
 }
