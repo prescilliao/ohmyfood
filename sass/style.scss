@@ -1,16 +1,7 @@
 @import "variables";
 @import "commun";
 @import 'titles';
-
-@include top-title;
-@include subtitle-home;
-@include subtitle-restaurants;
-@include display-column;
-@include display-row;
-@include justify-center;
-@include title-footer;
-@include subtilte-footer;
-@include conctact-footer;
+@import 'responsive';
 
 // ...
 
@@ -31,7 +22,7 @@
     }
 }
 
-.tuto{
+.tuto {
     @include display-column;
     .tuto_card{
         background-color: $backg-color-two;
@@ -62,7 +53,7 @@
                     justify-content: space-between;
                     padding: 5px;
                     .txt{
-                        @include displey-column;
+                        @include display-column;
                     }
                 }
             }
@@ -81,19 +72,19 @@
     background-color: $backg-color-two;
     border-radius: 20px 20px 0px 0px;
     .name{
-        @include displey-row;
+        @include display-row;
         justify-content: space-between;
         .sub-title-restau{
-            @include subtilte-restau
+            @include  subtitle-restaurants;
         }
     }
 } 
 
 .space{
-    @include displey-columnn;
+    @include display-column;
     gap: 40px;
     .gap{
-        @include dislay-column;
+        @include display-column;
         gap: 12px;
         .bar{
             border-bottom: solid 3px $bar-color;

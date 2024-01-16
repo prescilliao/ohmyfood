@@ -28,8 +28,7 @@ a{
     color: black;
 }
 
-.title{
-    font-family: $second-font; 
+.title{ 
     @include top-title ;
     @include justify-center;
 }

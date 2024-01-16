@@ -7,18 +7,238 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto';
+  font-family: "Roboto";
+  max-width: 768px;
+}
+
+.fa-solid {
+  color: black;
+}
+
+.fa-heart {
+  color: black;
+}
+
+.content {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .title {
+  font-family: "Shrikhand";
+  font-size: 30px;
+  font-weight: font-weight 400;
   display: flex;
+  align-items: center;
   justify-content: center;
-  padding: 14px 89px 13px 89px;
 }
-.title.location {
+
+.titletwo {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: font-weight 700;
+}
+
+.button {
+  border-radius: 25px;
+  background: linear-gradient(193deg, #9356DC, #FF79DA);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  background-color: #353535;
+  padding: 22px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+footer .foot_title {
+  font-family: "Shrikhand";
+  font-size: 18px;
+  font-weight: font-weight 400;
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+}
+footer ul li {
+  display: flex;
   flex-direction: row;
-  background-color: #EAEAEA;
 }
-.title.location.fa-solid {
-  color: white;
+footer ul li .foot {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: font-weight 900;
+}
+footer ul li .contact {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: font-weight 400;
+}
+
+h1 {
+  font-family: "Roboto";
+  font-weight: font-weight 500;
+  font-size: 16px;
+}
+
+h2 {
+  font-family: "Roboto";
+  font-weight: font-weight 300;
+  font-size: 18px;
+}
+
+h3 {
+  font-family: "Roboto";
+  font-weight: font-weight 700;
+  font-size: 18px;
+}
+
+h4 {
+  font-family: "Roboto";
+  font-weight: font-weight 300;
+  font-size: 17px;
+}
+
+h5 {
+  font-family: "Roboto";
+  font-weight: font-weight 300;
+  font-size: 16px;
+}
+
+h6 {
+  font-family: "Roboto";
+  font-weight: font-weight 500;
+  font-size: 18px;
+}
+
+p {
+  font-family: "Roboto";
+  font-weight: font-weight 300;
+  font-size: 15px;
+}
+
+.money {
+  font-family: "Roboto";
+  font-weight: font-weight 700;
+  font-size: 15px;
+}
+
+.top_page {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EAEAEA;
+  width: 100%;
+}
+
+.welcome {
+  background-color: #f6f6f6;
+}
+.welcome .welcontent {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tuto {
+  display: flex;
+  flex-direction: column;
+}
+.tuto .tuto_card {
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.tuto .tuto_card .number {
+  background-color: #9356DC;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.restauration {
+  background-color: #f6f6f6;
+}
+.restauration .restau {
+  display: flex;
+  flex-direction: column;
+}
+.restauration .restau .home_card {
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+.restauration .restau .home_card .home_img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.restauration .restau .home_card .home_img .text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
+}
+.restauration .restau .home_card .home_img .text .txt {
+  display: flex;
+  flex-direction: column;
+}
+
+.img_restau {
+  width: 100%;
+  height: 275px;
+}
+
+.menu {
+  background-color: #f6f6f6;
+  border-radius: 20px 20px 0px 0px;
+}
+.menu .name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.menu .name .sub-title-restau {
+  font-family: "Shrikhand";
+  font-size: 28px;
+  font-weight: font-weight 400;
+}
+
+.space {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.space .gap {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.space .gap .bar {
+  border-bottom: solid 3px #99E2D0;
+}
+.space .gap .restau_card {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.space .gap .restau_card .restau_txt {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */
