@@ -69,3 +69,43 @@
         }
     }
 }
+
+// style page restaurant :
+
+.img_restau{
+    width: 100%;
+    height: 275px;
+}
+
+.menu{
+    background-color: $backg-color-two;
+    border-radius: 20px 20px 0px 0px;
+    .name{
+        @include displey-row;
+        justify-content: space-between;
+        .sub-title-restau{
+            @include subtilte-restau
+        }
+    }
+} 
+
+.space{
+    @include displey-columnn;
+    gap: 40px;
+    .gap{
+        @include dislay-column;
+        gap: 12px;
+        .bar{
+            border-bottom: solid 3px $bar-color;
+        }
+        .restau_card{
+            background-color: white;
+            border-radius:10px;
+            @include display-row;
+            gap: 5px;
+            .restau_txt{
+                @include display-column
+            }
+        }
+    }
+}
