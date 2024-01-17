@@ -31,6 +31,7 @@ a{
 .title{ 
     @include top-title ;
     @include justify-center;
+    padding: 14px 89px 13px 89px;
 }
 
 .titletwo{
@@ -42,6 +43,11 @@ a{
     background: linear-gradient(193deg, $main-color, $button-color);
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     @include justify-center;
+    color: white;
+    width: 186px;
+    height: 50px;
+    align-self: center; 
+    margin-bottom: 40px;
 }
 
 footer{
@@ -49,8 +55,10 @@ footer{
     padding: 22px 25px;
     @include display-column;
     gap: 16px;
+   
     .foot_title{
         @include title-footer;
+        color: white;
     }
 
     ul{
@@ -58,6 +66,8 @@ footer{
 
         li{ 
             @include display-row;
+            color: white;
+            gap: 10px;
             .foot{
                 @include subtilte-footer;
             }
