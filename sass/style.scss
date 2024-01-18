@@ -6,7 +6,6 @@
 // ...
 
 // style page home :
-
 .top_page{
     @include display-row;
     @include justify-center;
@@ -18,61 +17,94 @@
 
 .welcome{
     background-color: $backg-color-two;
+    height: max-content;
     .welcontent{
         @include display-column;
         @include justify-center;
+        gap: 30px;
+        .button{
+            width: 218px;
+        }
+        .hook{
+            @include display-column;
+            @include justify-center;
+            padding: 30px 20px 0px 20px;
+            text-align: center
+        }
     }
 }
 
 .tuto {
     @include display-column;
-    padding-top: 50px;
+    padding: 50px 15px 0px 15px;
     .tuto_gap{
         @include display-column;
         gap: 20px;
         margin: 20px 0px 70px 0px;
-    }
-    .tuto_card{
-        background-color: $backg-color-two;
-        @include display-row;
-        justify-content: space-around;
-        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-        border-radius: 20px;
-        padding: 15px;
-    
-        .tuto_txt{
+        .fusion{
             @include display-row;
-            gap: 30px;
+            .number{
+                background-color: $main-color;
+                width: 24px;
+                height: 24px;
+                border-radius: 50%;
+                @include justify-center;
+                color: white;
+                align-self: center;
+            }
         }
-        .number{
-            background-color: $main-color;
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            @include justify-center;
-            color: white;
+        .tuto_card{
+            background-color: $backg-color-two;
+            @include display-row;
+            justify-content: space-around;
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+            border-radius: 20px;
+            padding: 15px;
+            width: 100%;
+            .tuto_txt{
+                @include display-row;
+                gap: 30px;
+
+            }
         }
     }
 }
 
 .restauration{
     background-color: $backg-color-two;
+    padding: 50px 15px;
     .restau{
         @include display-column;
-        .home_card{
-            border-radius: 15px;
-            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
-            @include display-column;
-            .home_img{
-                object-fit: cover;
+        gap: 18px;
+        a{
+            width: 100%;
+            height: max-content;
+            .home_card{
+                border-radius: 15px;
+                box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+                height: 231px;
+                @include display-column;
+                .home_img{
+                    object-fit: cover;
+                    width: 100%;
+                    border-radius: 15px 15px 0px 0px;
+                    overflow: hidden;
+                }
                 .text{
-                    @include display-row;
-                    justify-content: space-between;
-                    padding: 5px;
+                     @include display-row;
+                     justify-content: space-between;
+                     padding: 15px 0px 15px 15px;
                     .txt{
                         @include display-column;
                     }
+                    i{
+                        padding-right: 20px;
+                        align-self: center;
+                        height: min-content;
+                        width: min-content;
+                    }
                 }
+
             }
         }
     }
@@ -99,7 +131,7 @@
             @include  subtitle-restaurants;
         }
     }
-} 
+}
 
 .space{
     @include display-column;
@@ -123,9 +155,9 @@
                 @include display-column;
                line-height: 135%;
             }
-            .money{ 
+            .money{
                 font-family: $main-font;
-                font-weight: $weight-7;
+                font-weight: 700;
                 font-size: 15px;
                 padding-right:15px;
                 height: min-content;
