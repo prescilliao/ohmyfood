@@ -10,14 +10,6 @@ body {
   max-width: 768px;
 }
 
-.fa-solid {
-  color: black;
-}
-
-.fa-heart {
-  color: black;
-}
-
 .content {
   width: 100%;
 }
@@ -25,22 +17,6 @@ body {
 a {
   text-decoration: none;
   color: black;
-}
-
-.title {
-  font-family: "Shrikhand";
-  font-size: 30px;
-  font-weight: 400;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 14px 89px 13px 89px;
-}
-
-.titletwo {
-  font-family: "Roboto";
-  font-size: 24px;
-  font-weight: 700;
 }
 
 .button {
@@ -133,6 +109,22 @@ p {
   font-size: 15px;
 }
 
+.title {
+  font-family: "Shrikhand";
+  font-size: 30px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 89px 13px 75px;
+}
+
+.titletwo {
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 700;
+}
+
 .top_page {
   display: flex;
   flex-direction: row;
@@ -169,6 +161,7 @@ p {
   justify-content: center;
   padding: 30px 20px 0px 20px;
   text-align: center;
+  gap: 10px;
 }
 
 .tuto {
@@ -190,12 +183,14 @@ p {
   background-color: #9356DC;
   width: 24px;
   height: 24px;
-  border-radius: 50%;
+  border-radius: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   align-self: center;
+  position: relative;
+  left: 10px;
 }
 .tuto .tuto_gap .tuto_card {
   background-color: #f6f6f6;
@@ -204,13 +199,17 @@ p {
   justify-content: space-around;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
-  padding: 15px;
+  padding: 0px 15px;
+  height: 70px;
   width: 100%;
 }
 .tuto .tuto_gap .tuto_card .tuto_txt {
   display: flex;
   flex-direction: row;
   gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .restauration {
@@ -260,8 +259,32 @@ p {
   width: min-content;
 }
 
+.title_top_restau {
+  font-family: "Shrikhand";
+  font-size: 30px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 0px 13px 0px;
+  width: 100%;
+}
+
+.en-tete {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.en-tete .arrow {
+  position: relative;
+  top: 28px;
+  left: 30px;
+}
+
 .img_restau {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 275px;
 }
 
@@ -271,6 +294,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  padding: 50px 15px 0px 15px;
 }
 .menu .name {
   display: flex;
@@ -294,7 +318,6 @@ p {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  padding: 0px 15px;
 }
 .space .gap .bar {
   border-bottom: solid 3px #99E2D0;

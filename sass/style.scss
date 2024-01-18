@@ -1,11 +1,20 @@
 @import "variables";
+@import 'mixin';
 @import "commun";
 @import 'titles';
 @import 'responsive';
 
-// ...
-
 // style page home :
+.title{ 
+    @include top-title ;
+    @include justify-center;
+    padding: 14px 89px 13px 75px;
+}
+
+.titletwo{
+    @include subtitle-home;
+}
+
 .top_page{
     @include display-row;
     @include justify-center;
@@ -29,7 +38,8 @@
             @include display-column;
             @include justify-center;
             padding: 30px 20px 0px 20px;
-            text-align: center
+            text-align: center;
+            gap: 10px;
         }
     }
 }
@@ -47,10 +57,12 @@
                 background-color: $main-color;
                 width: 24px;
                 height: 24px;
-                border-radius: 50%;
+                border-radius: 100%;
                 @include justify-center;
                 color: white;
                 align-self: center;
+                position: relative;
+                left: 10px
             }
         }
         .tuto_card{
@@ -59,11 +71,13 @@
             justify-content: space-around;
             box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
             border-radius: 20px;
-            padding: 15px;
+            padding: 0px 15px;
+            height: 70px;
             width: 100%;
             .tuto_txt{
                 @include display-row;
                 gap: 30px;
+                @include justify-center;
 
             }
         }
@@ -111,9 +125,26 @@
 }
 
 // style page restaurant :
+.title_top_restau{ 
+    @include top-title ;
+    @include justify-center;
+    padding: 14px 0px 13px 0px;
+    width: 100%;
+}
+
+.en-tete{
+    @include display-row;
+    width: 100%;
+    .arrow{
+    position: relative;
+    top: 28px;
+    left: 30px;
+    }
+}
 
 .img_restau{
     width: 100%;
+    object-fit: cover;
     height: 275px;
 }
 
@@ -122,6 +153,7 @@
     border-radius: 20px 20px 0px 0px;
     @include display-column;
     gap: 40px;
+    padding: 50px 15px 0px 15px;
     .name{
         @include display-row;
         padding-left:15px;
@@ -139,7 +171,6 @@
     .gap{
         @include display-column;
         gap: 12px;
-        padding: 0px 15px;
         .bar{
             border-bottom: solid 3px $bar-color;
             width: 40px;

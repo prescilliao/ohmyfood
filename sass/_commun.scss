@@ -7,16 +7,7 @@
 body {
     margin:0 ;
     padding:0;
-    // font-family: $main-font;
     max-width: 768px;
-}
-
-.fa-solid {
-    color: black;
-}
-
-.fa-heart{
-    color: black;
 }
 
 .content{
@@ -26,16 +17,6 @@ body {
 a{
     text-decoration: none;
     color: black;
-}
-
-.title{ 
-    @include top-title ;
-    @include justify-center;
-    padding: 14px 89px 13px 89px;
-}
-
-.titletwo{
-    @include subtitle-home;
 }
 
 .button{
