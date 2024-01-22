@@ -2,13 +2,13 @@
 @import 'mixin';
 @import "commun";
 @import 'titles';
-@import 'responsive';
+@import 'responsive_index';
 
 // style page home :
 .title{ 
     @include top-title ;
     @include justify-center;
-    padding: 14px 89px 13px 75px;
+    padding: 14px 0px 13px 0px;
 }
 
 .titletwo{

@@ -109,6 +109,60 @@ p {
   font-size: 15px;
 }
 
+@media screen and (min-width: 769px) {
+  body {
+    max-width: 100%;
+  }
+  body .title {
+    padding: 30px 0px 31px 0px;
+  }
+  body .tuto {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 15px 0px 15px;
+  }
+  body .tuto .tuto_gap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 25px 0px 50px 0px;
+  }
+  body .tuto .tuto_gap .tuto_card {
+    width: 100%;
+  }
+  body .tuto .tuto_gap .tuto_card .tuto_txt {
+    margin-left: 15px;
+  }
+  body .restauration {
+    padding: 50px 80px;
+  }
+  body .restauration .restau {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  body .restauration .restau a {
+    width: calc(50% - 100px);
+  }
+  body .restauration .restau .home_card {
+    width: 50%;
+  }
+  body footer {
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse;
+  }
+  body footer .foot_title {
+    padding-left: 30px;
+  }
+  body footer ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+}
 .title {
   font-family: "Shrikhand";
   font-size: 30px;
@@ -116,7 +170,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 14px 89px 13px 75px;
+  padding: 14px 0px 13px 0px;
 }
 
 .titletwo {
@@ -253,10 +307,6 @@ p {
 .restauration .restau a .home_card .text i {
   padding-right: 20px;
   align-self: center;
-  height: -moz-min-content;
-  height: min-content;
-  width: -moz-min-content;
-  width: min-content;
 }
 
 .title_top_restau {
