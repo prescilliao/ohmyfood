@@ -146,6 +146,21 @@ p {
   body .restauration .restau a {
     width: calc(50% - 18px);
   }
+  body .img_restau {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 375px;
+  }
+  body .menu {
+    width: 70%;
+    position: relative;
+    left: 13.6%;
+  }
+  body .menu .name {
+    justify-content: center;
+    gap: 18px;
+  }
   body footer {
     padding: 30px 25px;
     display: flex;
@@ -344,6 +359,8 @@ p {
   flex-direction: column;
   gap: 40px;
   padding: 50px 15px 0px 15px;
+  position: relative;
+  margin-top: -35px;
 }
 .menu .name {
   display: flex;
