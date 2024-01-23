@@ -9,7 +9,7 @@
 
         .tuto {
             @include display-column;
-            padding: 50px 15px 0px 15px;
+            padding: 50px 180px 0px 180px;
             .tuto_gap{
                 @include display-row;
                 justify-content: center;
@@ -24,11 +24,16 @@
         }
 
         .restauration{
-            padding: 50px 80px;
+            padding: 50px 180px;
             .restau{
                 margin-top: 20px;
                 @include display-row;
-                width: calc(100%/2- 100px);
+                flex-wrap: wrap;
+                width:100%;
+                a{
+                    width:calc(100%/2 - 18px);
+                    
+                }
             }
         }
 

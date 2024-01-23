@@ -119,7 +119,7 @@ p {
   body .tuto {
     display: flex;
     flex-direction: column;
-    padding: 50px 15px 0px 15px;
+    padding: 50px 180px 0px 180px;
   }
   body .tuto .tuto_gap {
     display: flex;
@@ -134,18 +134,17 @@ p {
     margin-left: 15px;
   }
   body .restauration {
-    padding: 50px 80px;
+    padding: 50px 180px;
   }
   body .restauration .restau {
     margin-top: 20px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
   }
   body .restauration .restau a {
-    width: calc(50% - 100px);
-  }
-  body .restauration .restau .home_card {
-    width: 50%;
+    width: calc(50% - 18px);
   }
   body footer {
     padding: 30px 25px;
