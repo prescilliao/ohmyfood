@@ -151,6 +151,8 @@ p {
     -o-object-fit: cover;
        object-fit: cover;
     height: 400px;
+    -o-object-position: 100% 55%;
+       object-position: 100% 55%;
   }
   body .menu {
     width: 70%;
