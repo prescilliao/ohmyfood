@@ -1,0 +1,19 @@
+body{
+
+.img_restau{
+    height: 500px;
+}
+
+.menu{
+   width: 70%;
+    .name{
+        @include display-row;
+        padding-left:15px;
+        justify-content: space-between;
+        align-items: center;
+        .sub-title-restau{
+            @include  subtitle-restaurants;
+        }
+    }
+}
+}
