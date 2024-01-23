@@ -1,11 +1,3 @@
-@import "variables";
-@import 'mixin';
-@import "commun";
-@import 'titles';
-@import 'responsive';
-@import 'animations';
-
-// style page home :
 .title{ 
     @include top-title ;
     @include justify-center;
@@ -118,82 +110,6 @@
                     }
                 }
 
-            }
-        }
-    }
-}
-
-// style page restaurant :
-.title_top_restau{ 
-    @include top-title ;
-    @include justify-center;
-    padding: 14px 0px 13px 0px;
-    width: 100%;
-}
-
-.en-tete{
-    @include display-row;
-    width: 100%;
-    .arrow{
-    position: relative;
-    top: 28px;
-    left: 30px;
-    }
-}
-
-.img_restau{
-    width: 100%;
-    object-fit: cover;
-    height: 275px;
-}
-
-.menu{
-    background-color: $backg-color-two;
-    border-radius: 20px 20px 0px 0px;
-    @include display-column;
-    gap: 40px;
-    padding: 50px 15px 0px 15px;
-    position: relative;
-    margin-top:-35px;
-    .name{
-        @include display-row;
-        padding-left:15px;
-        justify-content: space-between;
-        align-items: center;
-        .sub-title-restau{
-            @include  subtitle-restaurants;
-        }
-    }
-}
-
-.space{
-    @include display-column;
-    gap: 40px;
-    .gap{
-        @include display-column;
-        gap: 12px;
-        .bar{
-            border-bottom: solid 3px $bar-color;
-            width: 40px;
-        }
-        .restau_card{
-            background-color: white;
-            border-radius:20px;
-            @include display-row;
-            justify-content: space-between;
-            gap: 5px;
-            padding: 15px 0px 15px 15px;
-            .restau_txt{
-                @include display-column;
-               line-height: 135%;
-            }
-            .money{
-                font-family: $main-font;
-                font-weight: 700;
-                font-size: 15px;
-                padding-right:15px;
-                height: min-content;
-                align-self: flex-end;
             }
         }
     }
