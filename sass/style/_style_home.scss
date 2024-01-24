@@ -86,6 +86,16 @@
         a{
             width: 100%;
             height: max-content;
+            // .new{
+            //     position: relative;
+            // }
+            // .new::before{
+            //     content: "";
+            //     background-color: $bar-color;
+            //     height: 50px;
+            //     width: 60px;
+            //     position: absolute;
+            // }
             .home_card{
                 border-radius: 15px;
                 box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
