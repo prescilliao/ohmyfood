@@ -185,6 +185,112 @@ p {
     gap: 15px;
   }
 }
+@media screen and (min-width: 769px) {
+  body {
+    max-width: 100%;
+  }
+  body .title {
+    padding: 30px 0px 31px 0px;
+  }
+  body .tuto {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 180px 0px 180px;
+  }
+  body .tuto .tuto_gap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 25px 0px 50px 0px;
+  }
+  body .tuto .tuto_gap .tuto_card {
+    width: 100%;
+  }
+  body .tuto .tuto_gap .tuto_card .tuto_txt {
+    margin-left: 15px;
+  }
+  body .restauration {
+    padding: 50px 180px;
+  }
+  body .restauration .restau {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  body .restauration .restau a {
+    width: calc(50% - 18px);
+  }
+  body .img_restau {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 400px;
+    -o-object-position: 100% 55%;
+       object-position: 100% 55%;
+  }
+  body .menu {
+    width: 70%;
+    position: relative;
+    left: 14%;
+  }
+  body .menu .name {
+    justify-content: center;
+    gap: 18px;
+  }
+  body .space .gap {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0px 90px 0px 90px;
+  }
+  body footer {
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse;
+  }
+  body footer .foot_title {
+    padding-left: 30px;
+  }
+  body footer ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+}
+.fa-heart {
+  width: 22px;
+  height: 21px;
+  color: #101010;
+}
+
+.fa-location-dot {
+  color: #353535;
+}
+
+.fa-mobile-screen-button {
+  color: #7e7e7e;
+}
+
+.fa-list {
+  color: #7e7e7e;
+}
+
+.fa-store {
+  color: #9356dc;
+}
+
+.fa-utensils {
+  color: white;
+}
+
+.fa-handshake-angle {
+  color: white;
+}
+
 .title {
   font-family: "Shrikhand";
   font-size: 30px;
