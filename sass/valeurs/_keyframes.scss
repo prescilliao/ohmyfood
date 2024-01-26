@@ -1,0 +1,26 @@
+@keyframes chargement{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform:scale(0);
+    }
+}
+
+@keyframes spin{
+    from{
+        transform: rotate(0);
+    }
+    to{
+       transform: rotate(360deg);
+    }
+}
+
+@keyframes big{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.02);
+    }
+}

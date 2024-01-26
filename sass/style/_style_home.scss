@@ -39,7 +39,7 @@
 
 .tuto {
     @include display-column;
-    padding: 50px 15px 0px 15px;
+    padding: 50px 20px 0px 20px;
     .tuto_gap{
         @include display-column;
         gap: 20px;
@@ -81,6 +81,8 @@
 .restauration{
     background-color: $backg-color-two;
     padding: 50px 15px;
+    @include display-column;
+    gap: 30px;
     .restau{
         @include display-column;
         gap: 18px;

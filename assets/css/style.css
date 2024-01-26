@@ -280,7 +280,7 @@ p {
 }
 
 .fa-store {
-  color: #9356dc;
+  color: #7e7e7e;
 }
 
 .fa-utensils {
@@ -353,7 +353,7 @@ p {
 .tuto {
   display: flex;
   flex-direction: column;
-  padding: 50px 15px 0px 15px;
+  padding: 50px 20px 0px 20px;
 }
 .tuto .tuto_gap {
   display: flex;
@@ -402,6 +402,9 @@ p {
 .restauration {
   background-color: #f6f6f6;
   padding: 50px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 .restauration .restau {
   display: flex;
@@ -548,7 +551,7 @@ p {
   align-self: flex-end;
 }
 
-body .loader {
+.loader {
   display: grid;
   place-items: center;
   background-color: white;
@@ -561,12 +564,20 @@ body .loader {
   animation: chargement 0.5s 4s forwards;
   transform-origin: bottom;
 }
-body .loader i {
+.loader i {
   animation: spin 1.2s infinite linear;
 }
 
 .button:hover {
   filter: brightness(1.1);
+  animation: big forwards;
+}
+
+.fusion:hover {
+  animation: big forwards;
+}
+.fusion:hover i {
+  color: #9356DC;
 }
 
 @keyframes chargement {
@@ -583,5 +594,13 @@ body .loader i {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@keyframes big {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.02);
   }
 }/*# sourceMappingURL=style.css.map */
