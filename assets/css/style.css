@@ -295,6 +295,10 @@ p {
   color: #99E2D0;
 }
 
+.fa-circle-check {
+  color: white;
+}
+
 .title {
   font-family: "Shrikhand";
   font-size: 30px;
@@ -534,21 +538,39 @@ p {
   flex-direction: row;
   justify-content: space-between;
   gap: 5px;
-  padding: 15px 0px 15px 15px;
+  overflow: hidden;
 }
 .space .gap .restau_card .restau_txt {
   display: flex;
   flex-direction: column;
   line-height: 135%;
+  padding: 15px 0px 15px 15px;
+  text-overflow: ellipsis;
 }
-.space .gap .restau_card .money {
+.space .gap .restau_card .money_check {
+  display: flex;
+  flex-direction: row;
+  margin-right: -50px;
+  transition: all 1s;
+}
+.space .gap .restau_card .money_check .money {
   font-family: "Roboto";
+  padding-bottom: 15px;
   font-weight: 700;
   font-size: 15px;
   padding-right: 15px;
   height: -moz-min-content;
   height: min-content;
   align-self: flex-end;
+}
+.space .gap .restau_card .money_check .check {
+  background-color: #99E2D0;
+  width: 50px;
+  display: grid;
+  place-items: center;
+}
+.space .gap .restau_card:hover .money_check {
+  margin-right: 0;
 }
 
 .loader {

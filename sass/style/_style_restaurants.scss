@@ -56,19 +56,38 @@
             @include display-row;
             justify-content: space-between;
             gap: 5px;
-            padding: 15px 0px 15px 15px;
+            overflow: hidden;
+            
             .restau_txt{
                 @include display-column;
                line-height: 135%;
+               padding: 15px 0px 15px 15px;
+               text-overflow: ellipsis;
             }
-            .money{
-                font-family: $main-font;
-                font-weight: 700;
-                font-size: 15px;
-                padding-right:15px;
-                height: min-content;
-                align-self: flex-end;
+            .money_check{
+                @include display-row;
+                margin-right: -50px;
+                 transition: all 1s;
+                .money{
+                    font-family: $main-font;
+                    padding-bottom: 15px;
+                    font-weight: 700;
+                    font-size: 15px;
+                    padding-right:15px;
+                    height: min-content;
+                    align-self: flex-end;
+                }
+                .check{
+                    background-color: $bar-color;
+                    width: 50px;
+                    display: grid;
+                    place-items: center;
+                }
             }
+            &:hover .money_check{
+                margin-right: 0;
+            }
+
         }
     }
 }
