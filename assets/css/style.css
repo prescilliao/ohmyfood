@@ -291,6 +291,10 @@ p {
   color: white;
 }
 
+.fa-spinner {
+  color: #99E2D0;
+}
+
 .title {
   font-family: "Shrikhand";
   font-size: 30px;
@@ -360,6 +364,7 @@ p {
 .tuto .tuto_gap .fusion {
   display: flex;
   flex-direction: row;
+  position: relative;
 }
 .tuto .tuto_gap .fusion .number {
   background-color: #9356DC;
@@ -371,8 +376,8 @@ p {
   justify-content: center;
   color: white;
   align-self: center;
-  position: relative;
-  left: 10px;
+  position: absolute;
+  left: -10px;
 }
 .tuto .tuto_gap .tuto_card {
   background-color: #f6f6f6;
@@ -402,6 +407,22 @@ p {
   display: flex;
   flex-direction: column;
   gap: 18px;
+}
+.restauration .restau .new {
+  position: relative;
+}
+.restauration .restau .new::before {
+  content: "Nouveau";
+  position: absolute;
+  height: 2rem;
+  width: 5rem;
+  background-color: #99E2D0;
+  display: grid;
+  place-items: center;
+  right: 1rem;
+  top: 1rem;
+  border-radius: 2px;
+  color: #05110e;
 }
 .restauration .restau a {
   width: 100%;
@@ -525,4 +546,42 @@ p {
   height: -moz-min-content;
   height: min-content;
   align-self: flex-end;
+}
+
+body .loader {
+  display: grid;
+  place-items: center;
+  background-color: white;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  opacity: 0.9;
+  animation: chargement 0.5s 4s forwards;
+  transform-origin: bottom;
+}
+body .loader i {
+  animation: spin 1.2s infinite linear;
+}
+
+.button:hover {
+  filter: brightness(1.1);
+}
+
+@keyframes chargement {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=style.css.map */

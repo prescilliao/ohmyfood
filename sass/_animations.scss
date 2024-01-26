@@ -1,0 +1,39 @@
+body .loader{
+    display: grid;
+    place-items: center;
+    background-color: #ffff;
+    height: 100vh;
+    width: 100%;
+    position:fixed;
+    inset: 0;
+    z-index: 200;
+    opacity: 0.9;
+    animation: chargement 0.5s 4s forwards;
+    transform-origin: bottom;
+   
+    i{
+        animation: spin 1.2s infinite linear;
+    }
+}
+
+.button:hover{
+    filter: brightness(1.1);
+}
+
+@keyframes chargement{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform:scale(0);
+    }
+}
+
+@keyframes spin{
+    from{
+        transform: rotate(0);
+    }
+    to{
+       transform: rotate(360deg);
+    }
+}
