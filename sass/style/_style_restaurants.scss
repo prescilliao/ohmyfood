@@ -57,7 +57,7 @@
             justify-content: space-between;
             gap: 5px;
             overflow: hidden;
-            
+            animation: menu_appear 2s;
             .restau_txt{
                 @include display-column;
                line-height: 135%;
@@ -67,7 +67,7 @@
             .money_check{
                 @include display-row;
                 margin-right: -50px;
-                 transition: all 1s;
+                transition: all 1s;
                 .money{
                     font-family: $main-font;
                     padding-bottom: 15px;
@@ -82,10 +82,14 @@
                     width: 50px;
                     display: grid;
                     place-items: center;
+                    
                 }
             }
             &:hover .money_check{
                 margin-right: 0;
+                i{
+                        animation: spin 1s;
+                    }
             }
 
         }

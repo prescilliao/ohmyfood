@@ -539,6 +539,7 @@ p {
   justify-content: space-between;
   gap: 5px;
   overflow: hidden;
+  animation: menu_appear 2s;
 }
 .space .gap .restau_card .restau_txt {
   display: flex;
@@ -571,6 +572,9 @@ p {
 }
 .space .gap .restau_card:hover .money_check {
   margin-right: 0;
+}
+.space .gap .restau_card:hover .money_check i {
+  animation: spin 1s;
 }
 
 .loader {
@@ -624,5 +628,15 @@ p {
   }
   to {
     transform: scale(1.02);
+  }
+}
+@keyframes menu_appear {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }/*# sourceMappingURL=style.css.map */
