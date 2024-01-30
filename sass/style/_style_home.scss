@@ -9,7 +9,6 @@
 }
 
 .top_page{
-    @include display-row;
     @include justify-center;
     background-color: $backg-color;
     width: 100%;

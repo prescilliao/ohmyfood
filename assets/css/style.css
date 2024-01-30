@@ -60,6 +60,7 @@ footer ul li .foot {
   font-family: "Roboto";
   font-size: 16px;
   font-weight: 900;
+  font-weight: 500;
 }
 footer ul li .contact {
   font-family: "Roboto";
@@ -320,8 +321,6 @@ p {
 }
 
 .top_page {
-  display: flex;
-  flex-direction: row;
   display: flex;
   align-items: center;
   justify-content: center;
