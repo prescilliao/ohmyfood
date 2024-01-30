@@ -75,7 +75,13 @@
             justify-content: space-between;
             gap: 5px;
             overflow: hidden;
-            animation: menu_appear 2s;
+            @for $i from 1 through 20 {
+                    &.annimation-#{$i} {
+                        animation: menu_appear #{$i*500}ms;
+                        
+                    }
+                }
+            
             .restau_txt{
                 @include display-column;
                line-height: 135%;

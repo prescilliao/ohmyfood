@@ -263,24 +263,29 @@ p {
   }
 }
 .fa-heart {
+  position: absolute;
+  bottom: 33px;
+  right: 25px;
   width: 22px;
   height: 21px;
+  font-size: 20px;
   color: #101010;
 }
-
-.fa-heart > .survol {
-  position: relative;
-  bottom: 16px;
+.fa-heart.restau {
+  bottom: 0;
+  top: 43px;
+  right: 25px;
+}
+.fa-heart.survol {
   color: transparent;
   background-image: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
           background-clip: text;
   opacity: 0;
+  transition-duration: 0.5s;
 }
-
-.survol:hover {
+.fa-heart.survol:hover {
   opacity: 1;
-  transform: translateY(0%) translateX(10%) scale(1.3);
   transition-duration: 0.5s;
 }
 
@@ -456,6 +461,7 @@ p {
   height: max-content;
 }
 .restauration .restau a .home_card {
+  position: relative;
   border-radius: 15px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
   height: 231px;
@@ -576,7 +582,66 @@ p {
   justify-content: space-between;
   gap: 5px;
   overflow: hidden;
-  animation: menu_appear 2s;
+}
+.space .gap .restau_card.annimation-1 {
+  animation: menu_appear 500ms;
+}
+.space .gap .restau_card.annimation-2 {
+  animation: menu_appear 1000ms;
+}
+.space .gap .restau_card.annimation-3 {
+  animation: menu_appear 1500ms;
+}
+.space .gap .restau_card.annimation-4 {
+  animation: menu_appear 2000ms;
+}
+.space .gap .restau_card.annimation-5 {
+  animation: menu_appear 2500ms;
+}
+.space .gap .restau_card.annimation-6 {
+  animation: menu_appear 3000ms;
+}
+.space .gap .restau_card.annimation-7 {
+  animation: menu_appear 3500ms;
+}
+.space .gap .restau_card.annimation-8 {
+  animation: menu_appear 4000ms;
+}
+.space .gap .restau_card.annimation-9 {
+  animation: menu_appear 4500ms;
+}
+.space .gap .restau_card.annimation-10 {
+  animation: menu_appear 5000ms;
+}
+.space .gap .restau_card.annimation-11 {
+  animation: menu_appear 5500ms;
+}
+.space .gap .restau_card.annimation-12 {
+  animation: menu_appear 6000ms;
+}
+.space .gap .restau_card.annimation-13 {
+  animation: menu_appear 6500ms;
+}
+.space .gap .restau_card.annimation-14 {
+  animation: menu_appear 7000ms;
+}
+.space .gap .restau_card.annimation-15 {
+  animation: menu_appear 7500ms;
+}
+.space .gap .restau_card.annimation-16 {
+  animation: menu_appear 8000ms;
+}
+.space .gap .restau_card.annimation-17 {
+  animation: menu_appear 8500ms;
+}
+.space .gap .restau_card.annimation-18 {
+  animation: menu_appear 9000ms;
+}
+.space .gap .restau_card.annimation-19 {
+  animation: menu_appear 9500ms;
+}
+.space .gap .restau_card.annimation-20 {
+  animation: menu_appear 10000ms;
 }
 .space .gap .restau_card .restau_txt {
   display: flex;
@@ -670,11 +735,11 @@ p {
   }
 }
 @keyframes menu_appear {
-  0% {
+  from {
     transform: translateY(50%);
     opacity: 0;
   }
-  100% {
+  to {
     transform: translateY(0);
     opacity: 1;
   }
