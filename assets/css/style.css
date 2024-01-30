@@ -21,7 +21,7 @@ a {
 
 .button {
   border-radius: 25px;
-  background: linear-gradient(193deg, #9356DC, #FF79DA);
+  background: linear-gradient(350deg, #9356DC, #FF79DA);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
@@ -49,12 +49,15 @@ footer .foot_title {
 footer ul {
   display: flex;
   flex-direction: column;
+  gap: 7px;
 }
 footer ul li {
   display: flex;
   flex-direction: row;
   color: white;
   gap: 10px;
+  font-size: 16px;
+  font-weight: 400;
 }
 footer ul li .foot {
   font-family: "Roboto";
@@ -70,6 +73,7 @@ footer ul li .contact {
 
 h1 {
   font-family: "Roboto";
+  font-weight: 500;
   font-size: 16px;
 }
 
@@ -411,10 +415,10 @@ p {
   background-color: #f6f6f6;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
-  padding: 0px 15px;
+  padding: 0px 0px 0px 35px;
   height: 70px;
   width: 100%;
 }
@@ -453,7 +457,8 @@ p {
   right: 1rem;
   top: 1rem;
   border-radius: 2px;
-  color: #05110e;
+  color: #008766;
+  z-index: 1;
 }
 .restauration .restau a {
   width: 100%;
