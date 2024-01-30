@@ -63,6 +63,8 @@
                line-height: 135%;
                padding: 15px 0px 15px 15px;
                text-overflow: ellipsis;
+               text-wrap: nowrap;
+               overflow: hidden;
             }
             .money_check{
                 @include display-row;

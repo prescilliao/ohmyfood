@@ -550,6 +550,8 @@ p {
   line-height: 135%;
   padding: 15px 0px 15px 15px;
   text-overflow: ellipsis;
+  text-wrap: nowrap;
+  overflow: hidden;
 }
 .space .gap .restau_card .money_check {
   display: flex;
