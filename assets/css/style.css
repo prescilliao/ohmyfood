@@ -268,6 +268,20 @@ p {
   color: #101010;
 }
 
+.fa-heart > .survol {
+  position: relative;
+  bottom: 16px;
+  color: transparent;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+          background-clip: text;
+  opacity: 0;
+}
+
+.survol:hover {
+  opacity: 1;
+}
+
 .fa-arrow-left {
   color: #353535;
 }

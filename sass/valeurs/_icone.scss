@@ -3,6 +3,17 @@
     height: 21px;
     color: #101010;
 }
+.fa-heart > .survol{
+    position: relative;
+    bottom: 16px;
+    color: transparent;
+    background-image: linear-gradient($main-color,$button-color);
+    background-clip: text;
+    opacity: 0;
+}
+.survol:hover{
+    opacity: 1;
+}
 .fa-arrow-left{
     color: #353535;
 }
