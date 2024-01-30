@@ -10,12 +10,15 @@
        .tuto {
            @include display-column;
            padding: 50px 180px 0px 180px;
+           margin: auto;
+           max-width: 1080px;
            .tuto_gap{
                @include display-row;
                justify-content: center;
                margin: 25px 0px 50px 0px;
                .tuto_card{
                    width: 100%;
+                   padding: 0px 20px 0px 35px;
                    .tuto_txt{
                       margin-left: 15px;
                    }
@@ -25,6 +28,8 @@
 
        .restauration{
            padding: 50px 180px;
+           max-width: 1080px;
+           margin: auto;
            .restau{
                margin-top: 20px;
                @include display-row;
@@ -46,7 +51,9 @@
        .menu{
         width: 70%;
         position: relative;
-        left: 14%;
+        margin: auto;
+        margin-top: -35px;
+        max-width: 1080px;
         .name{
             justify-content: center;
             gap:18px;

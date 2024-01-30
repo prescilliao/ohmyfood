@@ -125,6 +125,8 @@ p {
     display: flex;
     flex-direction: column;
     padding: 50px 180px 0px 180px;
+    margin: auto;
+    max-width: 1080px;
   }
   body .tuto .tuto_gap {
     display: flex;
@@ -134,12 +136,15 @@ p {
   }
   body .tuto .tuto_gap .tuto_card {
     width: 100%;
+    padding: 0px 20px 0px 35px;
   }
   body .tuto .tuto_gap .tuto_card .tuto_txt {
     margin-left: 15px;
   }
   body .restauration {
     padding: 50px 180px;
+    max-width: 1080px;
+    margin: auto;
   }
   body .restauration .restau {
     margin-top: 20px;
@@ -162,7 +167,9 @@ p {
   body .menu {
     width: 70%;
     position: relative;
-    left: 14%;
+    margin: auto;
+    margin-top: -35px;
+    max-width: 1080px;
   }
   body .menu .name {
     justify-content: center;
@@ -201,6 +208,8 @@ p {
     display: flex;
     flex-direction: column;
     padding: 50px 180px 0px 180px;
+    margin: auto;
+    max-width: 1080px;
   }
   body .tuto .tuto_gap {
     display: flex;
@@ -210,12 +219,15 @@ p {
   }
   body .tuto .tuto_gap .tuto_card {
     width: 100%;
+    padding: 0px 20px 0px 35px;
   }
   body .tuto .tuto_gap .tuto_card .tuto_txt {
     margin-left: 15px;
   }
   body .restauration {
     padding: 50px 180px;
+    max-width: 1080px;
+    margin: auto;
   }
   body .restauration .restau {
     margin-top: 20px;
@@ -238,7 +250,9 @@ p {
   body .menu {
     width: 70%;
     position: relative;
-    left: 14%;
+    margin: auto;
+    margin-top: -35px;
+    max-width: 1080px;
   }
   body .menu .name {
     justify-content: center;
@@ -537,7 +551,6 @@ p {
 .menu .name {
   display: flex;
   flex-direction: row;
-  padding-left: 15px;
   justify-content: space-between;
   align-items: center;
 }
@@ -578,14 +591,17 @@ p {
 .space .gap .bar {
   border-bottom: solid 3px #99E2D0;
   width: 40px;
+  height: 27px;
 }
 .space .gap .restau_card {
   background-color: white;
+  box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 5px;
+  text-overflow: ellipsis;
   overflow: hidden;
 }
 .space .gap .restau_card.annimation-1 {
