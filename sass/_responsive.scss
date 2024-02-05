@@ -41,6 +41,14 @@
            }
        }
 
+       .fa-heart{
+            &.restau{
+                bottom: 0;
+                top: 60px;
+                right: 130px;
+            }
+        }
+
        .img_restau{
         width: 100%;
         object-fit: cover;

@@ -159,6 +159,11 @@ p {
   body .restauration .restau a {
     width: calc(50% - 18px);
   }
+  body .fa-heart.restau {
+    bottom: 0;
+    top: 60px;
+    right: 130px;
+  }
   body .img_restau {
     width: 100%;
     -o-object-fit: cover;
@@ -243,6 +248,11 @@ p {
   body .restauration .restau a {
     width: calc(50% - 18px);
   }
+  body .fa-heart.restau {
+    bottom: 0;
+    top: 60px;
+    right: 130px;
+  }
   body .img_restau {
     width: 100%;
     -o-object-fit: cover;
@@ -297,7 +307,7 @@ p {
 .fa-heart.restau {
   bottom: 0;
   top: 60px;
-  right: 130px;
+  right: 25px;
 }
 .fa-heart.survol {
   color: transparent;
