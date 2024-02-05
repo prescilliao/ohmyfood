@@ -74,12 +74,13 @@
            @include display-row;
            flex-direction: row-reverse;        
            .foot_title{
-               padding-left: 30px
+               padding-left: 30px;
+               padding-right: 30px;
            }
            ul{
                @include display-row;
                align-items: center;
-               gap: 15px;
+               gap: 30px;
            }
        }
    }     

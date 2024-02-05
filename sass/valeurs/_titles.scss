@@ -31,12 +31,16 @@ h5{
 
 h6{ 
     font-family: $main-font;
-    font-weight: 500;
+    // font-weight: 500;
     font-size: 18px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 p{ 
     font-family: $main-font;
     font-weight: 300;
     font-size: 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
