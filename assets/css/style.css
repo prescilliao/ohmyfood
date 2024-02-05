@@ -287,7 +287,7 @@ p {
 }
 .fa-heart {
   position: absolute;
-  bottom: 33px;
+  bottom: 28px;
   right: 25px;
   width: 22px;
   height: 21px;
@@ -296,8 +296,8 @@ p {
 }
 .fa-heart.restau {
   bottom: 0;
-  top: 43px;
-  right: 25px;
+  top: 60px;
+  right: 130px;
 }
 .fa-heart.survol {
   color: transparent;
