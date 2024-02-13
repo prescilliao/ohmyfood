@@ -341,7 +341,7 @@ p {
 }
 
 .fa-store {
-  color: #7e7e7e;
+  color: #9356DC;
 }
 
 .fa-utensils {
@@ -748,9 +748,6 @@ p {
 
 .fusion:hover {
   animation: big forwards;
-}
-.fusion:hover i {
-  color: #9356DC;
 }
 
 @keyframes chargement {
