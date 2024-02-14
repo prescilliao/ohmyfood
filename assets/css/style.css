@@ -160,6 +160,10 @@ p {
   body .restauration .restau a {
     width: calc(50% - 18px);
   }
+  body .restauration .restau a i {
+    left: 87%;
+    padding-right: 50px;
+  }
   body .fa-heart.restau {
     bottom: 0;
     top: 60px;
@@ -249,6 +253,10 @@ p {
   }
   body .restauration .restau a {
     width: calc(50% - 18px);
+  }
+  body .restauration .restau a i {
+    left: 87%;
+    padding-right: 50px;
   }
   body .fa-heart.restau {
     bottom: 0;
@@ -520,7 +528,6 @@ p {
 .restauration .restau a .home_card .text {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   padding: 15px 0px 15px 15px;
 }
 .restauration .restau a .home_card .text .txt {
