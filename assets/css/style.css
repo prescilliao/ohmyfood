@@ -691,7 +691,7 @@ p {
   flex-direction: column;
   line-height: 135%;
   padding: 15px 0px 15px 15px;
-  text-wrap: nowrap;
+  white-space: nowrap;
   overflow: hidden;
 }
 .space .gap .restau_card .money_check {

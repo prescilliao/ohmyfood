@@ -85,10 +85,10 @@
 
             .restau_txt{
                 @include display-column;
-               line-height: 135%;
-               padding: 15px 0px 15px 15px;
-               text-wrap: nowrap;
-               overflow: hidden;
+                line-height: 135%;
+                padding: 15px 0px 15px 15px;
+                white-space:nowrap;
+                overflow: hidden;
             }
             .money_check{
                 @include display-row;
