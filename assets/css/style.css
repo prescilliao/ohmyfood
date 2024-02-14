@@ -161,7 +161,7 @@ p {
     width: calc(50% - 18px);
   }
   body .restauration .restau a i {
-    left: 87%;
+    left: 80%;
     padding-right: 50px;
   }
   body .fa-heart.restau {
@@ -255,7 +255,7 @@ p {
     width: calc(50% - 18px);
   }
   body .restauration .restau a i {
-    left: 87%;
+    left: 80%;
     padding-right: 50px;
   }
   body .fa-heart.restau {
@@ -535,7 +535,7 @@ p {
   flex-direction: column;
 }
 .restauration .restau a .home_card .text i {
-  padding-right: 20px;
+  padding: 0px 20px 0px 10px;
   align-self: center;
 }
 
@@ -590,6 +590,7 @@ p {
   font-weight: 400;
 }
 .menu .name i {
+  padding: 0px 15px 0px 15px;
   display: grid;
   place-items: center;
 }

@@ -37,6 +37,7 @@
             @include  subtitle-restaurants;
         }
         i{
+            padding: 0px 15px 0px 15px;
             display: grid;
             place-items: center;
             .fa-heart > .survol{
