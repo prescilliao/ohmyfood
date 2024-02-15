@@ -82,21 +82,28 @@
                 margin: 0px 90px 0px 90px;
             }
         }
-
-
-       footer{       
-           padding: 30px 25px;
-           @include display-row;
-           flex-direction: row-reverse;        
-           .foot_title{
-               padding-left: 30px;
-               padding-right: 30px;
-           }
-           ul{
-               @include display-row;
-               align-items: center;
-               gap: 30px;
-           }
-       }
-    }     
+        
+        footer{
+            padding: 30px 25px;
+            @include display-row;
+            flex-direction: row-reverse;
+            .foot_title{
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+            .footer_contact{
+                @include display-row;
+                gap:30px;
+                .link_mail{
+                    display: grid;
+                    place-items: center;
+                }
+                ul{
+                    @include display-row;
+                    gap: 30px;
+                    align-items: center;
+                }
+            }
+        } 
+    } 
 }

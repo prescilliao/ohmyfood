@@ -41,25 +41,32 @@ footer{
         @include title-footer;
         color: white;
     }
-
-    ul{
+    .footer_contact{
         @include display-column;
-        gap: 7px;
-
-        li{ 
-            @include display-row;
+        gap:7px;
+        .link_mail{
             color: white;
-            gap: 10px;
-            font-size: 16px;
             font-weight: 400;
-            .foot{
-                @include subtilte-footer;
-                font-weight:500 ;
-            }
-            .contact{
-                @include conctact-footer
-            }
-        } 
+        }
+        ul{
+            @include display-column;
+            gap: 7px;
 
+            li{ 
+                @include display-row;
+                color: white;
+                gap: 10px;
+                font-size: 16px;
+                font-weight: 400;
+                .foot{
+                    @include subtilte-footer;
+                    font-weight:500 ;
+                }
+                .contact{
+                    @include conctact-footer
+                }
+            } 
+
+        }
     }
 }

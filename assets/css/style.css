@@ -46,12 +46,21 @@ footer .foot_title {
   font-weight: 400;
   color: white;
 }
-footer ul {
+footer .footer_contact {
   display: flex;
   flex-direction: column;
   gap: 7px;
 }
-footer ul li {
+footer .footer_contact .link_mail {
+  color: white;
+  font-weight: 400;
+}
+footer .footer_contact ul {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+footer .footer_contact ul li {
   display: flex;
   flex-direction: row;
   color: white;
@@ -59,13 +68,13 @@ footer ul li {
   font-size: 16px;
   font-weight: 400;
 }
-footer ul li .foot {
+footer .footer_contact ul li .foot {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 900;
   font-weight: 500;
 }
-footer ul li .contact {
+footer .footer_contact ul li .contact {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -204,11 +213,20 @@ p {
     padding-left: 30px;
     padding-right: 30px;
   }
-  body footer ul {
+  body footer .footer_contact {
     display: flex;
     flex-direction: row;
-    align-items: center;
     gap: 30px;
+  }
+  body footer .footer_contact .link_mail {
+    display: grid;
+    place-items: center;
+  }
+  body footer .footer_contact ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
   }
 }
 @media screen and (min-width: 769px) {
@@ -298,11 +316,20 @@ p {
     padding-left: 30px;
     padding-right: 30px;
   }
-  body footer ul {
+  body footer .footer_contact {
     display: flex;
     flex-direction: row;
-    align-items: center;
     gap: 30px;
+  }
+  body footer .footer_contact .link_mail {
+    display: grid;
+    place-items: center;
+  }
+  body footer .footer_contact ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
   }
 }
 .fa-heart {
